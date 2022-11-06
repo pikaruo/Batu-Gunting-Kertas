@@ -30,13 +30,11 @@ public class MenuSettings : MonoBehaviour
             toggle.isOn = true;
             Debug.Log("Status Music Mute :" + SoundsManager.Instance.music.mute);
         }
-
     }
 
     // TODO resolution
     Resolution[] resolutions;
     public TMP_Dropdown resolutionDropdown;
-
     int currentResolutionIndex = 0;
 
     void Start()

@@ -12,12 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: 23739747d48d0294996fda33ff6f1c84
   - enabled: 1
-    path: Assets/Scenes/PlatWithBot.unity
+    path: Assets/Scenes/Old Scene/PlatWithBot.unity
     guid: 88705195f3b1e5a4497a831cb517538b
   - enabled: 1
     path: Assets/Scenes/PlatWithPlayer.unity
     guid: ef49a92ce27550042a395e05f148e4be
   - enabled: 1
-    path: Assets/Scenes/GamePlayShooter.unity
+    path: Assets/Scenes/Old Scene/GamePlayShooter.unity
     guid: f9ad371bedaf09b44ae421063295b764
   m_configObjects: {}

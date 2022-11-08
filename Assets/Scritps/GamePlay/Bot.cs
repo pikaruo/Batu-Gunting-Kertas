@@ -5,8 +5,8 @@ using UnityEngine;
 public class Bot : MonoBehaviour
 {
 
-    public Player player;
-    public GameManager gameManager;
+    public CardPlayer player;
+    public CardGameManager gameManager;
     public float choosingInterval;
     private float timer = 0;
     int lastSelection = 0;
@@ -22,7 +22,7 @@ public class Bot : MonoBehaviour
         /* 
         *mengecek apakah 
         */
-        if (gameManager.State != GameManager.GameState.ChooseAttack)
+        if (gameManager.State != CardGameManager.GameState.ChooseAttack)
         {
             timer = 0;
             return;

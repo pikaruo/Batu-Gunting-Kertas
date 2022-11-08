@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour
+public class CardPlayer : MonoBehaviour
 {
 
     public Transform attackPosRef;
@@ -17,7 +17,10 @@ public class Player : MonoBehaviour
     public float Health;
     public float MaxHealth;
 
+    public TMP_Text nameText;
     public TMP_Text healthText;
+
+    public TMP_Text NickName { get => nameText; }
 
     private void Start()
     {
@@ -28,6 +31,7 @@ public class Player : MonoBehaviour
     {
         get => chosenCard == null ? null : chosenCard.attackValue;
     }
+
 
     public void SetChosenCard(Cards newCard)
     {

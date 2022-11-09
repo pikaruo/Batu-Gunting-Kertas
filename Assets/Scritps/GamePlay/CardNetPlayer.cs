@@ -24,16 +24,6 @@ public class CardNetPlayer : MonoBehaviourPun
             }
         }
     }
-
-    private void OnDestroy()
-    {
-        foreach (var card in cards)
-        {
-            var button = card.GetComponent<Button>();
-            button.onClick.RemoveListener(() => RemoteClickButton(card.attackValue));
-        }
-    }
-
     private void RemoteClickButton(Attack value)
     {
         if (photonView.IsMine)
@@ -63,6 +53,11 @@ public class CardNetPlayer : MonoBehaviourPun
 
     private void OnDisable()
     {
+        foreach (var card in cards)
+        {
+            var button = card.GetComponent<Button>();
+            button.onClick.RemoveListener(() => RemoteClickButton(card.attackValue));
+        }
         NetPlayers.Remove(this);
     }
 }

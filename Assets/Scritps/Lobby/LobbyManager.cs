@@ -138,13 +138,10 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
-
         foreach (var roomInfo in roomList)
         {
             roomInfoCache[roomInfo.Name] = roomInfo;
         }
-
-        Debug.Log("Room Updated");
 
         foreach (var item in this.roomItemList)
         {

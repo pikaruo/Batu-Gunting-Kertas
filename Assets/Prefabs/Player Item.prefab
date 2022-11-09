@@ -137,7 +137,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e2daaea78bc45041b63581e807b74b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  avatarImage: {fileID: 2825599147646614263}
   playerName: {fileID: 2825599148402280562}
+  avatarSprites:
+  - {fileID: 21300000, guid: 4db666f2850da8a4fbebf2f50d79de4c, type: 3}
+  - {fileID: 21300000, guid: 909b17538fefa074d8c11f7d392a65d1, type: 3}
+  - {fileID: 21300000, guid: 39369716d532caa48a40cc0eb5bd3b6b, type: 3}
 --- !u!1 &2825599147646614261
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +209,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4db666f2850da8a4fbebf2f50d79de4c, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

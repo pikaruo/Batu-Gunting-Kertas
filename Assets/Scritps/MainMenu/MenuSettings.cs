@@ -63,8 +63,8 @@ public class MenuSettings : MonoBehaviour
 
         // TODO Load Volume
         volumeSlider.value = SoundsManager.Instance.music.volume;
-        SoundsManager.Instance.LoadVolume();
-        Debug.Log("Volume Music : " + volumeSlider.value);
+        // SoundsManager.Instance.LoadVolume();
+        // Debug.Log("Volume Music : " + volumeSlider.value);
 
         // TODO fullscreen
         // if (Screen.fullScreen == Screen.fullScreen)

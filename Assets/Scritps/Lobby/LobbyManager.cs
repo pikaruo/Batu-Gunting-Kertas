@@ -43,6 +43,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         PhotonNetwork.CreateRoom(newRoomInputField.text, roomOptions);
     }
 
+    // start room
     public void ClickStartGame(string levelName)
     {
         if (PhotonNetwork.IsMasterClient)
@@ -50,6 +51,12 @@ public class LobbyManager : MonoBehaviourPunCallbacks
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.LoadLevel(levelName);
         }
+    }
+
+    // leave room
+    public void ClickLeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
     }
 
     public void JoinRoom(string roomName)

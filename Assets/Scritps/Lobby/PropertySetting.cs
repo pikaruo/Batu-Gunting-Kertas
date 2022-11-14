@@ -35,6 +35,7 @@ public class PropertySetting : MonoBehaviourPunCallbacks
         else
         {
             UpdateSliderInputField(initialValue);
+            SetCustomProperty(initialValue);
         }
 
         // ui interaktif untuk master saja
@@ -43,7 +44,6 @@ public class PropertySetting : MonoBehaviourPunCallbacks
             slider.interactable = false;
             inputField.interactable = false;
         }
-
     }
 
     public void InputFromSlider(float value)

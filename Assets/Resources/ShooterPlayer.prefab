@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  health: 10
   playerName: {fileID: 2911841328011408698}
 --- !u!1 &8995024811610959907
 GameObject:

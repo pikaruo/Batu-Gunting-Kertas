@@ -11,9 +11,21 @@ public class ShooterPlayer : MonoBehaviourPun
     [SerializeField] int health = 10;
     [SerializeField] TMP_Text playerName;
 
+    float restoreValue = 10;
+    float damageValue = 20;
+
     private void Start()
     {
         playerName.text = photonView.Owner.NickName + $"({health})";
+        // set local properties
+        if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(PropertyNames.Room.RestorValue, out var roomRestoreValue))
+        {
+            this.restoreValue = (float)roomRestoreValue;
+        }
+        if (PhotonNetwork.CurrentRoom.CustomProperties.TryGetValue(PropertyNames.Room.DamageValue, out var roomDamageValue))
+        {
+            this.damageValue = (float)roomDamageValue;
+        }
     }
 
     void Update()

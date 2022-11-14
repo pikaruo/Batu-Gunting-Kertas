@@ -9,7 +9,7 @@ public class GamePlayNetworkManager : MonoBehaviourPunCallbacks
 {
     public void BackToMenu()
     {
-        StartCoroutine(BackToLobbyByCR());
+        StartCoroutine(BackToMenuByCR());
     }
     IEnumerator BackToMenuByCR()
     {
@@ -18,7 +18,6 @@ public class GamePlayNetworkManager : MonoBehaviourPunCallbacks
         {
             yield return null;
         }
-
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -26,6 +25,7 @@ public class GamePlayNetworkManager : MonoBehaviourPunCallbacks
     {
         StartCoroutine(BackToLobbyByCR());
     }
+
     IEnumerator BackToLobbyByCR()
     {
         PhotonNetwork.LeaveRoom();

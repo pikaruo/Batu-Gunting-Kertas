@@ -12,7 +12,7 @@
 ## [Link Download Installer](https://github.com/pikaruo/Batu-Gunting-Kertas/tree/multiplayer/Release%20Installer/Installer)
 ## atau installer download versi 1.1
 ## [Link Download Installer](https://github.com/pikaruo/Batu-Gunting-Kertas/releases/tag/v1.1)
-##Versi portable
+## Versi portable
 ## [Link Download Portable](https://github.com/pikaruo/Batu-Gunting-Kertas/tree/multiplayer/Release%20Installer/Portable)
 
 ## **TUGAS SKILVUL**

@@ -2396,13 +2396,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bot: {fileID: 1135025128}
-  selectedDiffculty: 0
+  selectedDifficulty: 0
   botDifficulties:
   - Name: Easy
     ChoosingInterval: 0.5
     MaxHealth: 80
     RestoreValue: 5
-    DamageValue: 20
+    DamageValue: 10
   - Name: Normal
     ChoosingInterval: 0.3
     MaxHealth: 100
@@ -2418,7 +2418,7 @@ MonoBehaviour:
     MaxHealth: 200
     RestoreValue: 3
     DamageValue: 10
-  enableRemotConfig: 1
+  enableRemoteConfig: 1
   difficultyKey: Difficulty
 --- !u!1 &1142605895
 GameObject:
